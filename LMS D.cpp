@@ -42,21 +42,7 @@ bool isValidCourseCode(string code)
 	return flag;
 }
 
-bool isValidCreditHours(int crdHrs)
-{
-	bool flag = false;
 
-	if ((crdHrs > 0) && (crdHrs < 4))
-	{
-		flag = true;
-	}
-	else
-	{
-		flag = false;
-	}
-
-	return flag;
-}
 
 bool isValidSemester(int semester)
 {
@@ -122,11 +108,7 @@ bool saveCourse(string codeList[], string nameList[], int crtHrsList[], int semL
 	return flag;
 }
 
-bool does_file_exist(const char *filename)
-{
-	ifstream infile(filename);
-	return infile.good();
-}
+
 
 bool isValidData(string arr[], string arr1[], string pas, string user, int s)
 {
